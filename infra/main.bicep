@@ -206,30 +206,7 @@ module openAi './modules/ai/cognitiveservices.bicep' = {
           capacity: 80
         }
       }
-      {
-        name: 'gpt-4-deploy'
-        model: {
-          format: 'OpenAI'
-          name: 'gpt-4'
-          version: '0613'
-        }
-        sku: {
-          name: 'Standard'
-          capacity: 10
-        }
-      }
-      {
-        name: 'gpt-4-32k-deploy'
-        model: {
-          format: 'OpenAI'
-          name: 'gpt-4-32k'
-          version: '0613'
-        }
-        sku: {
-          name: 'Standard'
-          capacity: 20
-        }
-      }
+     
       {
         name: 'text-embedding-ada-002-deploy'
         model: {
